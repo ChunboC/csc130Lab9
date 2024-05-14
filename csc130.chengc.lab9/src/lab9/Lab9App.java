@@ -1,5 +1,16 @@
 package lab9;
-
+/**
+ * <p>
+ * Title: Lab9App.java
+ * </p>
+ *
+ * <p>
+ * Description: Lab9App demonstrates the use of a Binary Search Tree (BST) and 
+ * the construction of a Max Heap using an array of integers.
+ * </p>
+ *
+ * @author Chunbo Cheng
+ */
 public class Lab9App {
 
 	public static void main(String[] args) {
@@ -12,7 +23,7 @@ public class Lab9App {
 		bst.postOrder();
 		bst.levelOrderPrint();
 		System.out.println("\nHeight: " + "\n" + bst.height());
-		buildHeap(arr, 11);
+		buildHeap(arr, arr.length);
 		System.out.println("\nMax Heap: ");
 		for (int n : arr)
 			System.out.print(n + " ");
